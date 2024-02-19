@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+.header-contain {
+    background: url(../images/fons/header.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+.nav-header {
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+.header-burger-menu {
+    background-color: rgba(28, 28, 28, 0);
+    color: white;
+    border: none;
+    border-right: 2px solid white;
+    padding-right: 10px;
+    margin-right: 12px;
+}
+.name-header-class {
+    color: white;
+    font-family:  'Bebas Neue';
+    padding-top: 90px;
+}
+.title-name {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 5px;
+    line-height: 50px  
+}
+.subtitle-name {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 60px
+}
+.prices-button {
+    font-family: 'Open Sans';
+}
+.price-text {
+    border-right: 1px solid #000000;
+    padding-right: 5px;
+}
