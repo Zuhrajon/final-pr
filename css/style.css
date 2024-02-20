@@ -42,3 +42,53 @@
     border-right: 1px solid #000000;
     padding-right: 5px;
 }
+/* What is SOS section */
+.what-is-sos {
+    background: url(../images/fons/section-two.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.text-contain-sos {
+    font-family:'Bebas Neue' ;
+    flex-basis: 45%;
+}
+
+.paragraph-text {
+    font-family: 'Open Sans';
+    letter-spacing: normal;
+    font-weight: 400;
+    font-size: 17px;
+    width: 70%;
+    line-height: 22px;
+    margin-left: auto;
+}
+.fotos-contain {
+    flex-basis: 45%;
+}
+.form-img {
+    position: relative;
+}
+.form-img img {
+    position: absolute;
+    width: 402px;
+    height: 450px;
+}
+.img-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 30px;
+}
+.img-3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: 60px;
+}
+.button-click{
+   position: relative; 
+   left: 500px;
+   background-color: rgba(28, 28, 28, 0);
+   border: none;
+   padding-top: 50%;
+}
+
