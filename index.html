@@ -11,16 +11,16 @@
 </head>
 <body>
     <!-- Header section -->
-    <header class="header-contain pt-3">
-        <div class="container ">
-          <div class="d-flex justify-content-between align-items-end ">
+    <header class="header-contain pt-3" id="header">
+        <div class="container  ">
+          <div class="d-flex justify-content-between align-items-center ">
             <img src="./images/logo/logo.svg" alt="" >
             <div class="d-flex gap-5">
-                <p class="text-uppercase text-light nav-header">Main </p>
-                <p class="text-uppercase text-light nav-header">About </p>
-                <p class="text-uppercase text-light nav-header">Game features </p>
-                <p class="text-uppercase text-light nav-header">System requirements </p>
-                <p class="text-uppercase text-light nav-header">Quotes </p>
+                <a href="#header" class="text-uppercase text-decoration-none text-light nav-header">Main </a>
+                <a href="#About" class="text-uppercase text-decoration-none text-light nav-header">About </a>
+                <a href="#features" class="text-uppercase text-decoration-none text-light nav-header">Game features </a>
+                <a href="#System" class="text-uppercase text-decoration-none text-light nav-header">System requirements </a>
+                <a href="#Quotes" class="text-uppercase text-decoration-none text-light nav-header">Quotes </a>
             </div>
             <div class="d-flex align-items-center">
                 <button class="header-burger-menu text-uppercase">
@@ -49,7 +49,7 @@
         </div>
     </header>
     <!--What is SOS section -->
-    <section class="what-is-sos">
+    <section class="what-is-sos" id="About">
         <div class="container">
            <div class="d-flex ">
                 <div class="text-contain-sos">
@@ -74,7 +74,7 @@
                     <img id="foto1" src="./images/fotos/1.png" alt="">
                
                     <button class="button-click" value="Кнопка" onclick="changeImage()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="white"  viewBox="0 0 30 30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60px"  fill="white"  viewBox="0 0 30 30">
                             <path  d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
                         </svg>
                     </button>
@@ -84,7 +84,7 @@
         </div>
     </section>
     <!-- What’s so special? -->
-    <section class="special-section">
+    <section class="special-section" id="features">
         <div class="container ">
             <div class="row">
                 <div class="col-7">
@@ -124,7 +124,7 @@
         </div>
     </section>
     <!-- system requirements -->
-    <section class="system-section container-fon">
+    <section class="system-section container-fon" id="System">
         <div class="container ">
           <div class="system-container text-center">
             <h3 class="subtitle-name text-light">Can My Computer Run this game?</h3>
@@ -173,7 +173,7 @@
       </div>
     </section>
     <!--What people think?  -->
-    <section class="thoughts">
+    <section class="thoughts" id="Quotes">
       <div class="container d-flex justify-content-between">
         <div class="press-quotes">
           <h3 class="subtitle-name text-light">What people think?</h3>
@@ -187,11 +187,177 @@
           </button>
           
         </div>
-        <div>
-          
+        <div class="three-card">
+          <!-- first -->
+          <div class="card first-card" >
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <img src="./images/fotos/image-icon-1.jpg" class="card-img-b " alt="">
+                <div >
+                  <h5 class="card-title text-uppercase text-lightOrange title-card">Evan Lahti</h5>
+                  <p class="card-text">
+                    PC Gamer
+                  </p>
+                </div>
+                </div>
+                <a href="#" class="href-twitter">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6061" class="bi bi-twitter href-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="text-card">
+                <p class="text-light">“One of my gaming highlights of the year.”</p>
+              </div>
+              <div class="text-small">
+                <small  class="card-text">October 18, 2018</small>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Second -->
+          <div class="card" >
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <img src="./images/fotos/image-icon-2.jpg" class="card-img-b " alt="">
+                <div >
+                  <h5 class="card-title text-uppercase text-lightOrange title-card">Jada Griffin </h5>
+                  <p class="card-text">
+                    Nerdreactor
+                  </p>
+                </div>
+                </div>
+                <a href="#" class="href-twitter">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6061" class="bi bi-twitter href-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="text-card">
+                <p class="text-light">
+                  “The next big thing in the world of streaming and survival games.”             
+                 </p>
+              </div>
+              <div class="text-small">
+                <small  class="card-text">December 21, 2018</small>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Third -->
+          <div class="card third-card" >
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <img src="./images/fotos/image-icon-3.jpg" class="card-img-b " alt="">
+                <div >
+                  <h5 class="card-title text-uppercase text-lightOrange title-card">Aaron Williams </h5>
+                  <p class="card-text">
+                    Uproxx
+                  </p>
+                </div>
+                </div>
+                <a href="#" class="href-twitter">
+                  <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#5f6061" class="bi bi-twitter href-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="text-card">
+                <p class="text-light">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+              </div>
+              <div class="text-small">
+                <small  class="card-text">December 24, 2018</small>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- Want to stay in touch?-->
+    <section class="subscribe" id="">  
+      <div class="container d-flex justify-content-around">
+        <div class="foto-subscribe-block">
+          <img class="foto-subscribe" src="./images/fotos/subscribe-dark.png" alt="">
+        </div>
+        <div class="subscribe-text d-flex flex-column gap-5">
+          <div>
+            <h3 class="subtitle-name text-light">Want to stay in touch?</h3>
+            <h2 class="title-name text-uppercase text-light">newsletter SUBSCRIBE </h2>
+          </div>
+          <div>
+            <p class="subscribe-p">
+              In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+            </p>
+          </div>
+          <div class="d-flex gap-3">
+            <div>
+              <input type="email" name="email" id="" placeholder="Your email address" class="subscribe-input border-0" >
+            </div>
+            <button   class="btn btn-lightOrange subscribe-button border-0">
+              Subscribe now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center footer-section-one">
+          <img src="./images/logo/logo.svg" alt="" >
+          <div class="d-flex gap-5 footer-href">
+              <a href="#header" class="text-decoration-none text-uppercase text-light nav-header">Main </a>
+              <a href="#About" class="text-decoration-none text-uppercase text-light nav-header">About </a>
+              <a href="#features" class="text-decoration-none text-uppercase text-light nav-header">Game features </a>
+              <a href="#System" class="text-decoration-none text-uppercase text-light nav-header">System requirements </a>
+              <a href="#Quotes" class="text-decoration-none text-uppercase text-light nav-header">Quotes </a>
+          </div>
+          <div class="d-flex gap-3 ">
+            <a href="#" >
+              <svg class="href-icons-footer" xmlns="http://www.w3.org/2000/svg" width="40" fill="white" viewBox="0 0 30 30" >    
+                <path d="M12,27V15H8v-4h4V8.852C12,4.785,13.981,3,17.361,3c1.619,0,2.475,0.12,2.88,0.175V7h-2.305C16.501,7,16,7.757,16,9.291V11 h4.205l-0.571,4H16v12H12z"/>
+              </svg>
+            </a>
+            <a href="#" class="">
+              <svg class="href-icons-footer pt-2" xmlns="http://www.w3.org/2000/svg" width="50" fill="white" class="bi bi-twitter" viewBox="0 0 30 30">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a>
+            <a href="#" class="">
+              <svg class="href-icons-footer pt-2" xmlns="http://www.w3.org/2000/svg" width="50" fill="white" class="bi bi-youtube" viewBox="0 0 30 30">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+              </svg>
+            </a>
+            <a href="#" class="">
+              <svg class="href-icons-footer pt-2" xmlns="http://www.w3.org/2000/svg" width="50" fill="white" class="bi bi-twitch" viewBox="0 0 30 30">
+                <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between pt-2 pb-2">
+          <small>
+            © 2018 Outpost Games, Inc. All Rights Reserved
+          </small>
+          <div>
+            <a href="#"  class="text-decoration-none end-href">
+              Privacy Policy |   
+            </a>
+            <a href="#" class="text-decoration-none end-href">
+              Terms of Services
+            </a>
+            <a href="#" class="text-decoration-none end-href">
+              | Code of Conduct
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <script src="./js/script.js"></script>
