@@ -1,3 +1,22 @@
+// Функция для бургер меню
+const switchContainer = document.querySelector('.switch-container');
+const questionAbout = document.querySelector('.switch-question');
+switchContainer.addEventListener('click', toggleContainVisible);
+
+function toggleContainVisible(evt) {
+    console.dir(evt.target);
+    if (evt.target.classList.contains('switch-question')) {
+        evt.target.classList.toggle('expanded');
+    } else if (evt.target.classList.contains('switch-item')) {
+        const questionAsChild = evt.target.querySelector('.switch-question');
+        questionAsChild.classList.toggle('expanded');
+    } else if (evt.target.classList.contains('switch-answer')) {
+        evt.stopPropagation();
+    }
+}
+
+
+
 // Функция 2-ой секции для кнопки меняющей картинки
 function changeImage() {
     const animationFoto = document.getElementById("foto1").src;
@@ -14,7 +33,6 @@ accordContainer.addEventListener('click', toggleVisible);
 
 function toggleVisible(evt) {
     console.dir(evt.target);
-    // В зависимости от того на какой элемент мы нажали (можем узнать по содержанию в нём возможных классов) будет зависеть как мы найдём вопрос и удалим/добавим класс отображения
     if (evt.target.classList.contains('about-question')) {
         evt.target.classList.toggle('circle');
     } else if (evt.target.classList.contains('about-item')) {
@@ -24,3 +42,14 @@ function toggleVisible(evt) {
         evt.stopPropagation();
     }
 }
+
+// const inputText = document.getElementById('inputId').value;
+// const errorText = document.getElementById('errorText');
+// console.log(inputText);
+// if (inputText === '') {
+//     console.log('error');
+//     // errorText.style.display = 'block';
+//     } else {
+//     // поле заполнено
+//     }
+   

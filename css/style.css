@@ -24,6 +24,50 @@ body {
     padding-right: 10px;
     margin-right: 12px;
 }
+
+.switch-container {
+    max-width: 80px;
+}
+.switch-question {
+    color: #262626;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.switch-question::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/collapsed.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.6s;
+}
+.switch-question.expanded::after {
+    background-image: url('../images/icons/expanded.svg');
+    
+}
+.switch-question + .switch-answer {
+    height: 0;
+    opacity: 0;
+    margin: 0;
+}
+.switch-question.expanded + .switch-answer {
+    background-color: #262626;
+    height: auto;
+    opacity: 1;
+    margin-top: 15px;
+    color: #ffffff;
+
+}
+
+
+
 .name-header-class {
     color: white;
     font-family:  'Bebas Neue';
@@ -56,8 +100,10 @@ body {
 .what-is-sos {
     background: url(../images/fons/section-two.jpg) no-repeat center center fixed;
     background-size: cover;
+    min-height: 100vh;
+    height: auto;
     padding-top: 8%;
-    padding-bottom: 12%;
+    padding-bottom: 9%;
 }
 .text-contain-sos {
     font-family:'Bebas Neue' ;
@@ -111,8 +157,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     padding-top: 8%;
-    padding-bottom: 10%;   
-   
+    padding-bottom: 10%;    
 }
 
 .features-container {
@@ -175,6 +220,7 @@ body {
 .system-section {
     background:  url(../images/fons/section-right-dark.png), url(../images/fons/section-four.png) no-repeat center center  ;
     background-size: cover;
+    height: auto;
     min-height: 100vh;
     padding-top: 6%;
     padding-bottom: 8%;
@@ -235,6 +281,7 @@ table {
     font-size: 16px;
     font-weight: 700;
     padding:15px 20px 15px 20px;
+    width: 260px;
 }
 .three-card {
     flex-basis: 55%;
@@ -351,3 +398,77 @@ table {
     font-weight: 700;
     color: white;
 }
+
+
+
+@media (max-width: 962px) {
+    .nav-section-header {
+        display: none;
+    }
+    /* добавить в телефонную версию */
+    /* .header-icons {
+        display: none;
+    } */
+    .big-flex-container {
+        display: block;
+    }
+    .special-section {
+        background:  url(../images/fons/section-left-dark.png), url(../images/fons/section-three.png) no-repeat center top;   
+    }
+
+    .features-container {
+        margin-top: 10%;
+    }
+    .press-quotes {
+        align-items: center;
+    }
+    .three-card {
+        margin-top: 30px;
+    }
+    .first-card, 
+    .third-card {
+        margin-right: auto;
+        margin-left: 50px;
+    }
+    .second-card {
+        margin-left: auto;
+        margin-right: 50px;
+    }
+    .button-quotes {
+        margin-top: 7%; 
+    }
+    .subscribe {
+        background-color:#090a0c;
+        background: left left;
+    }
+    .foto-subscribe {
+        background: url(../images/fotos/subscribe.png) left left ;
+    }
+    .subscribe-text {
+        flex-basis: 60%;
+        flex-wrap: wrap;
+    }
+    .subscribe-input {
+        margin-bottom: 20px;
+    }
+    .subscribe-button {
+        margin-left: auto;
+    }
+    .footer-section-one {
+        flex-wrap: wrap;
+    }
+    
+}
+@media (max-width:756px) {
+    .special-section {
+        background:  url(../images/fons/section-left-dark.png), url(../images/fons/section-three.png) no-repeat left top;
+        padding-bottom: 8%;    
+    }
+    .first-card, 
+    .second-card,
+    .third-card {
+        margin-right: auto;
+        margin-left: auto;
+        width: auto;
+    }
+} 

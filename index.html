@@ -15,7 +15,7 @@
         <div class="container  ">
           <div class="d-flex justify-content-between align-items-center ">
             <img src="./images/logo/logo.svg" alt="" >
-            <div class="d-flex gap-5">
+            <div class="d-lg-flex gap-5 nav-section-header">
                 <a href="#header" class="text-uppercase text-decoration-none text-light nav-header">Main </a>
                 <a href="#About" class="text-uppercase text-decoration-none text-light nav-header">About </a>
                 <a href="#features" class="text-uppercase text-decoration-none text-light nav-header">Game features </a>
@@ -23,10 +23,19 @@
                 <a href="#Quotes" class="text-uppercase text-decoration-none text-light nav-header">Quotes </a>
             </div>
             <div class="d-flex align-items-center">
-                <button class="header-burger-menu text-uppercase">
-                    end
-                </button>
-                <div>
+              <div class="switch-container">
+                <div class="switch-item">
+                  <div class="switch-question expanded">
+                    eng
+                  </div>
+                  <div class="switch-answer text-center">
+                    <p class="p-switch">rus</p>
+                    <p class="p-switch">fra</p>
+                    <p class="p-switch">deo</p>
+                  </div>
+                </div>
+              </div>
+                <div class="header-icons">
                     <img src="./images/header-contain/xbox-icon.svg" alt=""  class="pe-1 ps-2">
                     <img src="./images/header-contain/steam-icon.svg" alt="" class="ps-1">
                 </div>
@@ -51,7 +60,7 @@
     <!--What is SOS section -->
     <section class="what-is-sos" id="About">
         <div class="container">
-           <div class="d-flex ">
+           <div class="d-flex big-flex-container ">
                 <div class="text-contain-sos">
                 <div class="border-bottom pb-2 mb-3">
                     <h3 class="subtitle-name text-light ">What is SOS?</h3>
@@ -87,9 +96,9 @@
     <section class="special-section" id="features">
         <div class="container ">
             <div class="row">
-                <div class="col-7">
+                <div class="col-lg-7 col-sm-4">
                 </div>
-                <div class="col-5 features-container">
+                <div class="col-lg-5 col-sm-8 features-container">
                  <h3 class="subtitle-name text-light" >What’s so special?</h3>
                  <h2 class="title-name text-uppercase text-light" >features</h2>
                  <div class="about-container ">
@@ -131,18 +140,18 @@
             <h2 class="title-name text-uppercase text-light">system requirements</h2>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
                 <table>
                   <tr>
                     <th>
                       OS:
-                      <p class="table-text">Windows 7 64-bit only</p>
-                      <p class="table-text table-text-two">(No OSX support at this time)</p>
+                      <p class="table-text">Windows 7 64-bit only
+                      (No OSX support at this time)</p>
                     </th>
                     <th>PROCESSOR:
                       <p class="table-text">
-                        Intel Core 2 Duo @ 2.4 GHZ or </p>
-                        <p class="table-text table-text-two">AMD Athlon X2 @ 2.8 GHZ</p>
+                        Intel Core 2 Duo @ 2.4 GHZ or 
+                        AMD Athlon X2 @ 2.8 GHZ</p>
                     </th>
                   </tr>
                   <tr>
@@ -161,24 +170,24 @@
                     <th colspan="2">GRAPHICS:
                       <p class="table-text">
                         NVIDIA GeForce GTX 660 2GB or 
-                        <p class="table-text table-text-two">AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+                        AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
 
                       </p>
                     </th>
                   </tr>
                 </table>
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-6 col-sm-0"></div>
           </div>
       </div>
     </section>
     <!--What people think?  -->
     <section class="thoughts" id="Quotes">
-      <div class="container d-flex justify-content-between">
-        <div class="press-quotes">
+      <div class="container d-lg-flex d-sm-block justify-content-between">
+        <div class="press-quotes d-flex flex-column">
           <h3 class="subtitle-name text-light">What people think?</h3>
           <h2 class="title-name text-uppercase text-light">Press quotes</h2>
-          <p class="text-section">Our goal is to create a product and service that you’re 
+          <p class="text-section text-center text-lg-start">Our goal is to create a product and service that you’re 
             satisfied with and use it every day. This is why we’re constantly working on 
             our services to make it better every day and really listen to what our users has to say.
           </p>
@@ -217,7 +226,7 @@
             </div>
           </div>
           <!-- Second -->
-          <div class="card" >
+          <div class="card second-card" >
             <div class="card-body">
               <div class="d-flex justify-content-between">
                 <div class="d-flex">
@@ -279,7 +288,7 @@
     </section>
     <!-- Want to stay in touch?-->
     <section class="subscribe" id="">  
-      <div class="container d-flex justify-content-around">
+      <div class="container d-flex justify-content-lg-around">
         <div class="foto-subscribe-block">
           <img class="foto-subscribe" src="./images/fotos/subscribe-dark.png" alt="">
         </div>
@@ -293,23 +302,23 @@
               In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
             </p>
           </div>
-          <div class="d-flex gap-3">
-            <div>
-              <input type="email" name="email" id="" placeholder="Your email address" class="subscribe-input border-0" >
+          <form class="d-lg-flex d-block  gap-3">
+            <div >
+              <input type="email" name="email" id="inputId" placeholder="Your email address" class="subscribe-input border-0" >
             </div>
-            <button   class="btn btn-lightOrange subscribe-button border-0">
+            <button type="submit" id=""  class="btn btn-lightOrange subscribe-button border-0">
               Subscribe now
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center footer-section-one">
+        <div class="d-flex justify-content-lg-between  gap-3 justify-content-around align-items-center footer-section-one">
           <img src="./images/logo/logo.svg" alt="" >
-          <div class="d-flex gap-5 footer-href">
+          <div class="d-flex gap-sm-5 gap-2 footer-href justify-content-around flex-wrap">
               <a href="#header" class="text-decoration-none text-uppercase text-light nav-header">Main </a>
               <a href="#About" class="text-decoration-none text-uppercase text-light nav-header">About </a>
               <a href="#features" class="text-decoration-none text-uppercase text-light nav-header">Game features </a>
@@ -340,19 +349,19 @@
             </a>
           </div>
         </div>
-        <div class="d-flex justify-content-between pt-2 pb-2">
+        <div class="d-flex justify-content-lg-between justify-content-center flex-wrap pt-2 pb-2">
           <small>
             © 2018 Outpost Games, Inc. All Rights Reserved
           </small>
           <div>
-            <a href="#"  class="text-decoration-none end-href">
-              Privacy Policy |   
+            <a href="#"  class="d-block d-sm-inline text-center text-decoration-none end-href">
+              Privacy Policy   
             </a>
-            <a href="#" class="text-decoration-none end-href">
-              Terms of Services
+            <a href="#" class="d-block d-sm-inline text-center text-decoration-none end-href">
+              |  Terms of Services  |
             </a>
-            <a href="#" class="text-decoration-none end-href">
-              | Code of Conduct
+            <a href="#" class="d-block d-sm-inline text-center text-decoration-none end-href">
+             Code of Conduct
             </a>
           </div>
         </div>
