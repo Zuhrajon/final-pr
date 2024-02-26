@@ -8,12 +8,22 @@ function toggleContainVisible(evt) {
     if (evt.target.classList.contains('switch-question')) {
         evt.target.classList.toggle('expanded');
     } else if (evt.target.classList.contains('switch-item')) {
-        const questionAsChild = evt.target.querySelector('.switch-question');
-        questionAsChild.classList.toggle('expanded');
+        const questionSwitch = evt.target.querySelector('.switch-question');
+        questionSwitch.classList.toggle('expanded');
     } else if (evt.target.classList.contains('switch-answer')) {
         evt.stopPropagation();
     }
 }
+// Функция для выпадающего списка
+
+function toggleMenu() {
+    var menu = document.getElementById("menuList");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
 
 
 
@@ -43,13 +53,3 @@ function toggleVisible(evt) {
     }
 }
 
-// const inputText = document.getElementById('inputId').value;
-// const errorText = document.getElementById('errorText');
-// console.log(inputText);
-// if (inputText === '') {
-//     console.log('error');
-//     // errorText.style.display = 'block';
-//     } else {
-//     // поле заполнено
-//     }
-   
