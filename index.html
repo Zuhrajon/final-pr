@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./fonts/Open-sans/stylesheet.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
   <title>social battle royale game</title>
 </head>
 
@@ -61,26 +62,22 @@
         </div>
       </div>
       <div class="name-header-class  d-flex flex-column align-items-center text-center ">
-        <h1 class="title-name">SURVIVE AT ALL COSTS</h1>
-        <h3 class="subtitle-name">Experience new social battle royale game</h3>
-        <button class="btn btn-lightOrange prices-button">
+        <div data-aos="fade-down">
+          <h1 class="title-name">SURVIVE AT ALL COSTS</h1>
+          <h3 class="subtitle-name">Experience new social battle royale game</h3>
+        </div>
+        <button data-aos="fade-up" class="btn btn-lightOrange prices-button">
           <span class="price-text">Buy Now on Steam</span>
           <span>$14.99</span>
         </button>
       </div>
-      <!-- <div class="text-light mb-0 mt-auto ">
-            <p>The story</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="white" class="bi bi-caret-down" viewBox="0 0 20 16">
-              <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-            </svg>
-          </div>      -->
     </div>
   </header>
   <!--What is SOS section -->
   <section class="what-is-sos" id="About">
     <div class="container">
       <div class="d-lg-flex d-block  big-flex-container ">
-        <div class="text-contain-sos">
+        <div class="text-contain-sos" data-aos="fade-right">
           <div class="border-bottom pb-2 mb-3">
             <h3 class="subtitle-name text-light ">What is SOS?</h3>
             <h2 class="title-name text-uppercase text-light">social battle royale game</h2>
@@ -97,7 +94,7 @@
             </p>
           </div>
         </div>
-        <div class="d-lg-flex d-none form-img ">
+        <div class="d-lg-flex d-none form-img " data-aos="fade-left">
           <img id="foto3" src="./images/fotos/3.png" alt="" class="img-3">
           <img id="foto2" src="./images/fotos/2.png" alt="" class="img-2">
           <img id="foto1" src="./images/fotos/1.png" alt="">
@@ -127,10 +124,12 @@
         <div class="col-lg-7 col-sm-4">
         </div>
         <div class="col-lg-5 col-sm-8 features-container">
-          <h3 class="subtitle-name text-light">What’s so special?</h3>
-          <h2 class="title-name text-uppercase text-light">features</h2>
+          <div data-aos="zoom-in">
+            <h3 class="subtitle-name text-light">What’s so special?</h3>
+            <h2 class="title-name text-uppercase text-light">features</h2>
+          </div>
           <div class="about-container ">
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up">
               <div class="about-question ">
                 SURVIVE AT ALL COSTS
               </div>
@@ -139,7 +138,7 @@
                 one of three spots on the rescue chopper.
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up">
               <div class="about-question">
                 CREATE ALLIES AND ENEMIES
               </div>
@@ -147,7 +146,7 @@
                 Keep your eyes open for footprints and other indicators that help you stalk your enemies...
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item" data-aos="fade-up">
               <div class="about-question">
                 IMPRESS THE AUDIENCE
               </div>
@@ -165,11 +164,13 @@
   <section class="system-section container-fon" id="System">
     <div class="container ">
       <div class="system-container text-center">
-        <h3 class="subtitle-name text-light">Can My Computer Run this game?</h3>
-        <h2 class="title-name text-uppercase text-light">system requirements</h2>
+        <h3 class="subtitle-name text-light" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          Can My Computer Run this game?</h3>
+        <h2 class="title-name text-uppercase text-light" data-aos="fade-left" data-aos-anchor="#example-anchor"
+          data-aos-offset="500" data-aos-duration="500">system requirements</h2>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12" data-aos="zoom-out">
           <table>
             <tr>
               <th>
@@ -220,14 +221,14 @@
           satisfied with and use it every day. This is why we’re constantly working on
           our services to make it better every day and really listen to what our users has to say.
         </p>
-        <button class="btn btn-lightOrange button-quotes">
+        <button class="btn btn-lightOrange button-quotes" data-aos="zoom-in">
           Read more testimonials
         </button>
 
       </div>
       <div class="three-card">
         <!-- first -->
-        <div class="card first-card">
+        <div class="card first-card" data-aos="zoom-out-left">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div class="d-flex">
@@ -257,7 +258,7 @@
           </div>
         </div>
         <!-- Second -->
-        <div class="card second-card">
+        <div class="card second-card" data-aos="zoom-out-right">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div class="d-flex">
@@ -289,7 +290,7 @@
           </div>
         </div>
         <!-- Third -->
-        <div class="card third-card">
+        <div class="card third-card" data-aos="zoom-out-left">
           <div class="card-body">
             <div class="d-flex justify-content-between">
               <div class="d-flex">
@@ -350,6 +351,12 @@
       </div>
     </div>
   </section>
+  <button data-action="scrollTop" class="expanded-fixed btn btn-lightOrange subscribe-button border-0">
+    <svg width="40" height="40" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 13L10 8L15 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
   <!-- footer -->
   <footer class="footer">
     <div class="container">
@@ -421,6 +428,15 @@
 
 
   <script src="./js/script.js"></script>
+  <script src="./js/scroll.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        mirror: true,
+      }
+    );
+  </script>
 </body>
 
 </html>

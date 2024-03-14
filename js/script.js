@@ -17,7 +17,7 @@ function toggleContainVisible(evt) {
 // Функция для выпадающего списка
 
 function toggleMenu() {
-    var menu = document.getElementById("menuList");
+    const menu = document.getElementById("menuList");
     if (menu.style.display === "block") {
       menu.style.display = "none";
     } else {
@@ -52,4 +52,4 @@ function toggleVisible(evt) {
         evt.stopPropagation();
     }
 }
-
+// 
